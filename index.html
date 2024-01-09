@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Celebrare</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Text Editor</h1>
+
+        <div class="editor">
+            <div id="canvas"></div>
+
+            <div class="text">
+                <div class="button">
+                    <button class="undo" onclick="undo()">UNDO</button>
+                    <button class="redo" onclick="redo()">REDO</button>
+                </div>
+            </div>
+
+            <div class="edit">
+
+                <h1 class="h1-editor">Editor</h1>
+
+                <div class="size">
+                    <label for="font_size">Font-Size</label>
+                    <select name="font_size" id="font_size">
+                        <option value="11">11</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                    </select>
+                </div>
+               
+                <br>
+
+                <div class="color">
+                    <label for="color-picker">Font-Color</label>
+                    <input type="color" name="color-picker" id="color-picker">
+                </div>
+               
+                <br>
+
+                <div class="family">
+                <label for="font-family-selector">Font-Family</label>
+                <select id="font-family-selector">
+                    <option value="Arial, sans-serif">Arial</option>
+                    <option value="Times New Roman, Times, serif">Times New Roman</option>
+                    <option value="Georgia, serif">Georgia</option>
+                
+                </select>
+                </div>
+                
+                <br>
+                <div>
+                    <button onclick="addText()" class="btn-add">Add Text</button>
+                    <button onclick="deleteText()" class="btn-delete">Delete Text</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
